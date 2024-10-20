@@ -16,4 +16,4 @@ Go to  [Alpha12 Assessment](https://alpha12-test.netlify.app) to check it on liv
 
 ## Further help
 
-To get more help on clarity, You can reach out to me via [Mail](jaywebs0@gmail.com).
+To get more help on clarity, You can reach out to me via [jaywebs0@gmail.com](mailto:jaywebs0@gmail.com).
