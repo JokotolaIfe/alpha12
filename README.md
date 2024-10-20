@@ -4,7 +4,7 @@ This project was built with [Angular CLI](https://github.com/angular/angular-cli
 
 Libaries used includes [Chart.js](https://chartjs.org), [Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/demos/demos.html),
 
-Icons used for the chat: Flat Icons [Flat Icons](https://www.flaticon.com)
+Icons used - Flat Icons [Flat Icons](https://www.flaticon.com)
 
 ## Development server
 
