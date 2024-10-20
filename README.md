@@ -2,7 +2,9 @@
 
 This project was built with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.4, 
 
-Libaries used includes [Chart.js](https://chartjs.org), [Chart.js](https://owlcarousel2.github.io/OwlCarousel2/demos/demos.html),
+Libaries used includes [Chart.js](https://chartjs.org), [Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/demos/demos.html),
+
+Icons used for the chat: Flat Icons [Flat Icons](https://www.flaticon.com)
 
 ## Development server
 
