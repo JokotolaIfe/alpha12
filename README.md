@@ -12,7 +12,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Deployment server
 
-Go to  [Alpha12 Assessment](https://alpha12-test.web.app) to check it on live, The application is deployed on [Firebase](https://firebase.com/)
+Go to  [Alpha12 Assessment](https://alpha12-test.netlify.app) to check it on live, The application is deployed on [Netlify](https://netlify.com/)
 
 ## Further help
 
