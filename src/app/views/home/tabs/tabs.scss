@@ -1,0 +1,40 @@
+.tab-container {
+    padding: 0rem 1rem 1rem 1rem;
+    border-top: solid 2px var(--sideNavBg);
+    background-color: var(--pageBg);
+    z-index: 9;
+    position: fixed;
+    bottom: 0px;
+    width: -webkit-fill-available;
+
+    .tab {
+        border-top: solid 5px transparent;
+        padding: 0.7rem;
+        position: relative;
+        top: -3px;
+
+        .icon {
+            color: var(--priText);
+        }
+
+        .label {
+            color: var(--faintText);
+        }
+    }
+
+    .active,
+    .tab:hover {
+        border-top: solid 3px #8576FF;
+
+        .icon,
+        .label {
+            color: #8576FF;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .tab-container {
+        display: none !important;
+    }
+}

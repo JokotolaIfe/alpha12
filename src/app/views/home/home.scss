@@ -1,0 +1,95 @@
+.section-title {
+    color: var(--sectionTitle);
+
+    .fi-rr-info {
+        bottom: 5px;
+    }
+}
+
+.medium {
+    font-weight: 450 !important;
+}
+
+#main {
+    transition: margin-left .5s;
+    background-color: var(--pageBg);
+    height: 100vh;
+    overflow: scroll;
+    color: var(--priText);
+}
+
+
+@media screen and (max-width: 768px) {
+    .w-49 {
+        width: 100% !important;
+    }
+
+    #main {
+        padding-bottom: 90px;
+    }
+
+    section {
+        padding: 1.2rem;
+    }
+
+    .chart-box,
+    .slider-box {
+        margin-bottom: 1.2rem;
+    }
+
+    .section-title {
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+
+    .welcome {
+        margin-top: 1rem;
+    }
+
+    .event-reg {
+        margin: unset !important;
+        padding: unset !important;
+    }
+
+    .header-topbar {
+        background-color: var(--sideNavBg);
+        position: sticky;
+        top: 0;
+        padding-right: 1rem !important;
+        z-index: 9;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .chart-box {
+        padding: 1.5rem 2.5rem;
+    }
+
+    .header-topbar {
+        display: none;
+    }
+
+    #main {
+        padding: 2rem;
+    }
+
+    .slider-box {
+        height: calc(300px + 3rem);
+    }
+
+    .section-title {
+        margin-bottom: 1rem;
+    }
+}
+
+.chart-box {
+    height: 300px;
+    border-radius: 5px;
+    background-color: var(--sideNavBg);
+    border: solid 1px var(--sidenavBorder);
+}
+
+.slider-box {
+    overflow: hidden;
+    border-radius: 5px;
+}

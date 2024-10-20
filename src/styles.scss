@@ -1,0 +1,963 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+@import "@flaticon/flaticon-uicons/css/all/all";
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: normal;
+    font-style: normal;
+    src: url('./assets/fonts/inter/Inter-Regular.otf')
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-style: normal;
+    src: url('./assets/fonts/inter/Inter-SemiBold.otf')
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 450;
+    font-style: normal;
+    src: url('./assets/fonts/inter/Inter-Regular.otf')
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-style: normal;
+    src: url('./assets/fonts/inter/Inter-Medium.otf')
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: bold;
+    src: url('./assets/fonts/inter/Inter-Bold.otf')
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/Inter-font/Inter/Inter-Light.otf')
+}
+
+span,
+li,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+tr,
+td,
+section,
+th,
+small {
+    font-family: 'Inter';
+}
+
+
+// wrap utilities
+.white-space-wrap {
+    white-space: normal !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+// margin utilities
+
+// margin utilities
+.m-auto {
+    margin: auto !important;
+}
+
+.m-0 {
+    margin: 0px !important;
+}
+
+.m-1 {
+    margin: 0.5rem !important;
+}
+
+.m-2 {
+    margin: 1rem !important;
+}
+
+.m-3 {
+    margin: 1.5rem !important;
+}
+
+.m-4 {
+    margin: 2rem !important;
+}
+
+.m-5 {
+    margin: 2.5rem !important;
+}
+
+.mt-0 {
+    margin-top: 0rem !important;
+}
+
+.mt-1 {
+    margin-top: 0.5rem !important;
+}
+
+.mt-2 {
+    margin-top: 1rem !important;
+}
+
+.mt-3 {
+    margin-top: 1.5rem !important;
+}
+
+.mt-4 {
+    margin-top: 2rem !important;
+}
+
+.mt-5 {
+    margin-top: 2.5rem !important;
+}
+
+.mt-6 {
+    margin-top: 3rem !important;
+}
+
+.mt-7 {
+    margin-top: 3.5rem !important;
+}
+
+.mt-8 {
+    margin-top: 4rem !important;
+}
+
+.mt-auto {
+    margin-top: auto !important;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.mb-1 {
+    margin-bottom: 0.5rem !important;
+}
+
+.mb-2 {
+    margin-bottom: 1rem !important;
+}
+
+.mb-3 {
+    margin-bottom: 1.5rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 2rem !important;
+}
+
+.mb-5 {
+    margin-bottom: 2.5rem !important;
+}
+
+.mb-6 {
+    margin-top: 3rem !important;
+}
+
+.mb-7 {
+    margin-top: 3.5rem !important;
+}
+
+.mb-8 {
+    margin-top: 4rem !important;
+}
+
+.mb-auto {
+    margin-bottom: auto !important;
+}
+
+.mr-1 {
+    margin-right: 0.5rem !important;
+}
+
+.mr-2 {
+    margin-right: 1rem !important;
+}
+
+.mr-3 {
+    margin-right: 1.5rem !important;
+}
+
+.mr-4 {
+    margin-right: 2rem !important;
+}
+
+.mr-5 {
+    margin-right: 2.5rem !important;
+}
+
+.mr-auto {
+    margin-right: auto !important;
+}
+
+.mr-none,
+.mr-0 {
+    margin-right: 0px !important;
+}
+
+.ml-none,
+.ml-0 {
+    margin-left: 0px !important;
+}
+
+.ml-1 {
+    margin-left: 0.5rem !important;
+}
+
+.ml-2 {
+    margin-left: 1rem !important;
+}
+
+.ml-3 {
+    margin-left: 1.5rem !important;
+}
+
+.ml-4 {
+    margin-left: 2rem !important;
+}
+
+.ml-5 {
+    margin-left: 2.5rem !important;
+}
+
+.ml-auto {
+    margin-left: auto !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-margin-t {
+    margin-top: 0 !important;
+}
+
+.no-margin-b {
+    margin-bottom: 0 !important;
+}
+
+.no-margin-l {
+    margin-left: 0 !important;
+}
+
+.no-margin-r {
+    margin-right: 0 !important;
+}
+
+.no-margin-x {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.no-margin-y {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.my-auto {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}
+
+// padding utilities
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-padding-t {
+    padding-top: 0 !important;
+}
+
+.no-padding-b {
+    padding-bottom: 0 !important;
+}
+
+.no-padding-l {
+    padding-left: 0 !important;
+}
+
+.no-padding-r {
+    padding-right: 0 !important;
+}
+
+.no-padding-x {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.no-padding-y {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.px-auto {
+    padding-left: auto !important;
+    padding-right: auto !important;
+}
+
+.py-auto {
+    padding-top: auto !important;
+    padding-bottom: auto !important;
+}
+
+.p-0 {
+    padding: 0 !important;
+}
+
+.p-1 {
+    padding: 0.5rem !important;
+}
+
+.p-2 {
+    padding: 1rem !important;
+}
+
+.p-3 {
+    padding: 1.5rem !important;
+}
+
+.p-4 {
+    padding: 2rem !important;
+}
+
+.p-5 {
+    padding: 2.5rem !important;
+}
+
+.pt-1 {
+    padding-top: 0.5rem !important;
+}
+
+.pt-0 {
+    padding-top: 0 !important;
+}
+
+.pb-0 {
+    padding-bottom: 0 !important;
+}
+
+.pl-0 {
+    padding-left: 0 !important;
+}
+
+.pr-0 {
+    padding-right: 0 !important;
+}
+
+.pt-2 {
+    padding-top: 1rem !important;
+}
+
+.pt-3 {
+    padding-top: 1.5rem !important;
+}
+
+.pt-4 {
+    padding-top: 2rem !important;
+}
+
+.pt-5 {
+    padding-top: 2.5rem !important;
+}
+
+.pt-auto {
+    padding-top: auto !important;
+}
+
+.pb-1 {
+    padding-bottom: 0.5rem !important;
+}
+
+.pb-2 {
+    padding-bottom: 1rem !important;
+}
+
+.pb-3 {
+    padding-bottom: 1.5rem !important;
+}
+
+.pb-4 {
+    padding-bottom: 2rem !important;
+}
+
+.pb-5 {
+    padding-bottom: 2.5rem !important;
+}
+
+.pb-auto {
+    padding-bottom: auto !important;
+}
+
+.pr-1 {
+    padding-right: 0.5rem !important;
+}
+
+.pr-2 {
+    padding-right: 1rem !important;
+}
+
+.pr-3 {
+    padding-right: 1.5rem !important;
+}
+
+.pr-4 {
+    padding-right: 2rem !important;
+}
+
+.pr-5 {
+    padding-right: 2.5rem !important;
+}
+
+.pr-auto {
+    padding-right: auto !important;
+}
+
+.pl-1 {
+    padding-left: 0.5rem !important;
+}
+
+.pl-2 {
+    padding-left: 1rem !important;
+}
+
+.pl-3 {
+    padding-left: 1.5rem !important;
+}
+
+.pl-4 {
+    padding-left: 2rem !important;
+}
+
+.pl-5 {
+    padding-left: 2.5rem !important;
+}
+
+.pl-auto {
+    padding-left: auto !important;
+}
+
+
+// display utilities
+.d-block {
+    display: block !important;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.d-inline-block {
+    display: inline-block !important;
+}
+
+.v-none {
+    visibility: hidden !important;
+}
+
+.v-visible {
+    visibility: visible !important;
+}
+
+.flexed,
+.d-flex {
+    display: flex !important;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.no-wrap {
+    flex-wrap: nowrap;
+}
+
+.align-items-center,
+.items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.justify-content-between {
+    justify-content: space-between !important;
+}
+
+.justify-content-start {
+    justify-content: start !important;
+}
+
+.justify-content-end {
+    justify-content: end !important;
+}
+
+.block-all {
+    * {
+        display: block !important;
+    }
+}
+
+// hover utilities
+.hovered:hover {
+    cursor: pointer !important;
+}
+
+// width utilities
+.w-100 {
+    width: 100% !important;
+}
+
+.w-98 {
+    width: 98% !important;
+}
+
+.w-95 {
+    width: 95% !important;
+}
+
+.w-90 {
+    width: 90% !important;
+}
+
+.w-80 {
+    width: 80% !important;
+}
+
+.w-78 {
+    width: 78% !important;
+}
+
+.w-73 {
+    width: 73% !important;
+}
+
+.w-75 {
+    width: 75% !important;
+}
+
+.w-70 {
+    width: 70% !important;
+}
+
+.w-65 {
+    width: 65% !important;
+}
+
+.w-60 {
+    width: 60% !important;
+}
+
+.w-58 {
+    width: 58% !important;
+}
+
+.w-55 {
+    width: 55% !important;
+}
+
+.w-50 {
+    width: 50% !important;
+}
+
+.w-49 {
+    width: 49% !important;
+}
+
+.w-48 {
+    width: 48% !important;
+}
+
+.w-45 {
+    width: 45% !important;
+}
+
+.w-40 {
+    width: 40% !important;
+}
+
+.w-38 {
+    width: 38% !important;
+}
+
+.w-35 {
+    width: 35% !important;
+}
+
+.w-33 {
+    width: 33% !important;
+}
+
+.w-30 {
+    width: 30% !important;
+}
+
+.w-25 {
+    width: 25% !important;
+}
+
+.w-24 {
+    width: 24% !important;
+}
+
+.w-23 {
+    width: 23% !important;
+}
+
+.w-22 {
+    width: 22% !important;
+}
+
+.w-20 {
+    width: 20% !important;
+}
+
+.w-15 {
+    width: 15% !important;
+}
+
+.w-10 {
+    width: 10% !important;
+}
+
+.w-5 {
+    width: 5% !important;
+}
+
+.w-unset {
+    width: unset !important;
+}
+
+.w-none {
+    width: none !important;
+}
+
+
+// height utilities
+.h-unset {
+    height: unset !important;
+}
+
+.h-none {
+    height: none !important;
+}
+
+.h-100 {
+    height: 100% !important;
+}
+
+.h-75 {
+    height: 75% !important;
+}
+
+.h-80 {
+    height: 80% !important;
+}
+
+.h-50 {
+    height: 50% !important;
+}
+
+.h-48 {
+    height: 48% !important;
+}
+
+.h-45 {
+    height: 45% !important;
+}
+
+.h-25 {
+    height: 25% !important;
+}
+
+// Border Radius Utilities
+
+.br-32 {
+    border-radius: 32px !important;
+}
+
+.br-24 {
+    border-radius: 24px !important;
+}
+
+.br-12 {
+    border-radius: 12px !important;
+}
+
+.br-8 {
+    border-radius: 8px !important;
+}
+
+.br-4 {
+    border-radius: 4px !important;
+}
+
+.br-50 {
+    border-radius: 50% !important;
+}
+
+// Miscellanous
+ul.basic-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.no-table-data-image {
+    max-height: 150px;
+    width: 200px;
+}
+
+.overflow-scroll {
+    overflow: scroll !important;
+}
+
+.overflow-y-scroll {
+    overflow-y: scroll !important;
+}
+
+.overflow-hidden {
+    overflow: hidden !important;
+}
+
+.verflow-y-scroll {
+    overflow-y: scroll !important;
+}
+
+.absolute {
+    position: absolute !important;
+}
+
+.relative {
+    position: relative !important;
+}
+
+.bold {
+    font-weight: bold !important;
+}
+
+.border-none {
+    border: none !important;
+}
+
+.btn-link,
+.btn-transparent {
+    background: none;
+}
+
+.scrollable-div {
+    height: 100%;
+    max-height: 80vh !important;
+    overflow: scroll;
+}
+
+.b-radius-5 {
+    border-radius: 5px;
+}
+
+.top-0 {
+    top: 0px !important;
+}
+
+.right-0 {
+    right: 0px !important;
+}
+
+.float-left {
+    float: left !important;
+}
+
+.block {
+    display: block !important;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.no-underline {
+    text-decoration: none !important;
+
+    * {
+        text-decoration: none !important;
+    }
+}
+
+.flexed-column {
+    flex-direction: column !important;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.grid-column-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-column-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-column-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.gap-3 {
+    gap: 3rem;
+}
+
+.gap-4 {
+    gap: 4rem;
+}
+
+.gap-5 {
+    gap: 5rem;
+}
+
+.text-10 {
+    font-size: 0.5rem !important;
+}
+
+.text-12 {
+    font-size: 0.6rem !important;
+}
+
+.text-13 {
+    font-size: 0.7rem !important;
+}
+
+.text-14 {
+    font-size: 0.8rem !important;
+}
+
+.text-15 {
+    font-size: 0.8rem !important;
+}
+
+.text-16 {
+    font-size: 1rem !important;
+}
+
+.text-18 {
+    font-size: 1.1rem !important;
+}
+
+.text-20 {
+    font-size: 1.2rem !important;
+}
+
+.text-21 {
+    font-size: 1.3rem !important;
+}
+
+.text-22 {
+    font-size: 1.4rem !important;
+}
+
+.text-23 {
+    font-size: 1.5rem !important;
+}
+
+.text-24 {
+    font-size: 1.6rem !important;
+}
+
+.text-28 {
+    font-size: 1.8rem !important;
+}
+
+.text-32 {
+    font-size: 2rem !important;
+}
+
+button:disabled {
+    opacity: 0.6;
+}
+
+.owl-carousel .owl-stage,
+.owl-carousel.owl-drag .owl-item {
+    width: 'auto' !important;
+}
+
+.fw-500 {
+    font-weight: 500 !important;
+}
+
+.fw-600 {
+    font-weight: 600 !important;
+}
+
+.close_ {
+    height: 20px !important;
+    width: 20px !important;
+    border-radius: 50%;
+    border: solid 1px #E2E8F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 1rem;
+    top: 1.4rem;
+    cursor: pointer;
+
+    .fi {
+        position: relative;
+        top: 2px;
+        height: 100%;
+    }
+
+    .fi::after {
+        font-size: 10px;
+        display: block;
+    }
+}

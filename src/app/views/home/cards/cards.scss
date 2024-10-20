@@ -1,0 +1,46 @@
+.card {
+    min-width: 200px !important;
+    border-radius: 2px;
+    background-color: var(--sideNavBg);
+    width: 20%;
+    border: solid 1px var(--sidenavBorder);
+    font-weight: 500;
+
+    &-title {
+        color: var(--cardHeader);
+    }
+
+    &-value {
+        color: var(--cardText);
+    }
+
+    .stat {
+        bottom: 3px;
+        font-weight: 500;
+
+        i {
+            font-size: 9px;
+            font-weight: bold;
+        }
+    }
+
+    .success-stat {
+        color: var(--tertiaryText);
+        font-weight: 600;
+    }
+
+    .danger-stat {
+        color: var(--dangerText);
+        font-weight: 600;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 1.2rem;
+    }
+}

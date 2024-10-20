@@ -1,0 +1,45 @@
+<!-- Add the 'collapse' class to the classList when the collapse menu is clicked -->
+<div id="mySidenav" class="sidenav" [ngClass]="sideNavCollapse ? 'collapse' : 'noCollapse'">
+
+    <!-- show close nav on mobile only -->
+    <div class="close_ absolute" (click)="closeNav()">
+        <div><i class="fi fi-ss-cross-small"></i></div>
+    </div>
+
+    <img src="images/logo.png" class="logo m-2" width="70" />
+    <ul class="links mt-2">
+        <!-- loop the navigation links gotten from a constant file where we store constant variables -->
+        <ng-container *ngFor="let link of navlinks">
+            <li class="navlink  relative {{link?.active && 'active'}}">
+                <a class="link" (click)="goTo(link)">
+                    <i [class]="link?.icon"></i>
+                    <span>{{link?.title}}</span>
+                </a>
+                <!-- while loopoing check if nav title is 'notifications' and show badge -->
+                <div *ngIf="link?.title === 'Notifications'" class="badge">
+                    <span>6</span>
+                </div>
+            </li>
+        </ng-container>
+
+        <li class="pt-0 pb-0 check navlink mt-1">
+            <div>
+                <!-- toggle switch to switch theme -->
+                <label class="switch mr-1 d-inline-block">
+                    <input type="checkbox" (change)="changeTheme()">
+                    <span class="slider round"></span>
+                </label>
+                <a class="link d-inline-block text-13">Dark Mode</a>
+            </div>
+        </li>
+        <li class="pt-0 pb-0 navlink mt__1">
+            <div class="d-flex avatar-cont">
+                <img src="images/avatar.png" />
+                <div class="ml-1 bio">
+                    <div class="name text-13">Rudra Devi</div>
+                    <span class="text-13 mail">{{'rudra.devi@gmail.com'}}</span>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

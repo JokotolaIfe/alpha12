@@ -1,0 +1,8 @@
+<div class="tab-container">
+    <div class="flexed justify-content-between items-center">
+        <div *ngFor="let tab of tabs" class="tab text-center m-auto {{tab?.active && 'active'}}">
+            <div class="icon"><i class="{{tab?.icon}} text-18"></i></div>
+            <div class="text-14 label mt-1">{{tab?.title}}</div>
+        </div>
+    </div>
+</div>

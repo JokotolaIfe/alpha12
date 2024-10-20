@@ -1,0 +1,5 @@
+<div id="regData" *ngIf="showChart">
+    <canvas baseChart [chartType]="'bar'" id="myChart" [data]="regData" [options]="barOptions" [legend]="false"
+        class="w-100 h-100">
+    </canvas>
+</div>

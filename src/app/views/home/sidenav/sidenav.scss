@@ -1,0 +1,245 @@
+/* The side navigation menu */
+.sidenav {
+    width: 6%;
+    min-width: 240px;
+    max-width: 300px;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    border-right: solid 1px var(--sidenavBorder);
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--sideNavBg);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.collapse {
+    width: 55px !important;
+    max-width: 70px !important;
+    min-width: unset;
+    overflow: hidden;
+    transition: ease-in 0.5s;
+
+    .logo {
+        width: 32px;
+        height: 32px;
+        position: relative;
+        right: 5px;
+    }
+
+    .avatar-cont {
+        position: relative;
+        right: 10px;
+    }
+
+    .link,
+    i {
+        color: var(--tableHeader) !important;
+    }
+
+    .link span,
+    .check,
+    .bio {
+        display: none;
+        visibility: hidden;
+    }
+
+    .badge {
+        position: absolute;
+        height: 5px !important;
+        width: 5px !important;
+        border-radius: 5px !important;
+        bottom: 25px;
+        display: inline;
+        right: 2px;
+        color: red;
+        content: '';
+
+        span {
+            display: none;
+        }
+    }
+
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+.links {
+    padding: 0px;
+    list-style: none;
+    margin-left: 10px;
+}
+
+.mt__1 {
+    margin-top: 1.3rem;
+}
+
+.noCollapse {
+
+    .navlink:hover,
+    .active {
+        // background-color: var(--navHover) !important;
+        transition: .5s;
+
+        a,
+        .fi {
+            color: var(--navTextHover) !important;
+        }
+    }
+}
+
+.navlink {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8em 0.6em;
+    cursor: pointer;
+    align-items: center;
+    font-size: 0.9em;
+    transition: .5s;
+    font-weight: 400;
+
+    a {
+        color: var(--sidenavTitle);
+        text-decoration: none;
+        display: block;
+        transition: .5s;
+    }
+
+    .fi {
+        font-size: 1em;
+        width: 1.5em;
+        position: relative;
+        top: 0.15em;
+        margin-right: 1rem;
+        color: var(--sidenavIcon);
+    }
+}
+
+.close_ {
+    background-color: white;
+}
+
+.badge {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    float: right;
+    font-size: 10px;
+    text-align: center;
+    margin-right: 20px;
+    height: 16px;
+    display: inline-block;
+    width: 16px;
+    font-weight: bold;
+    font-family: 'Inter-Regular';
+    line-height: 16px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 26px;
+    height: 15px;
+    top: 2px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: var(--priBg);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px var(--priBg);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(12px);
+    -ms-transform: translateX(12px);
+    transform: translateX(12px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 12px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.check:hover {
+    background-color: unset !important
+}
+
+.avatar-cont {
+    transform: translateX(5px);
+    transition: 0.5s;
+
+    img {
+        width: 32px;
+        height: 32px
+    }
+
+    .name {
+        color: var(--priText);
+    }
+
+    .mail {
+        color: var(--faintText);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sidenav {
+        width: 100% !important;
+        min-width: unset;
+        max-width: unset;
+        z-index: 99;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .close_ {
+        display: none;
+    }
+}

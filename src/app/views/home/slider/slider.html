@@ -1,0 +1,27 @@
+<div *ngIf="showSlider">
+    <owl-carousel-o [options]="customOptions" (translated)="getPassedData($event)" #owlSlide>
+        <ng-container *ngFor="let slide of slides; let x = index">
+            <ng-template carouselSlide [id]="slide.id" [width]="width">
+                <div [ngStyle]="{'background-image': 'url(' + slide?.image + ')'}" class="slide-bg w-100"
+                    style="height: 350px;">
+                    <!-- slide controls -->
+                    <div class="_indicators">
+                        <i class="fi fi-sr-angle-circle-left" (click)="owlSlide.prev()"></i>
+                        <i class="fi fi-ss-angle-circle-right" (click)="owlSlide.next()"></i>
+                    </div>
+                    <div class="text-cont">
+                        <b class="fw-600 text-15">{{slide?.title}}</b>
+                        <div class="mt-2 text-14">{{slide?.details}}</div>
+                        <div class="d-flex text-center content-center mt-2">
+                            <!-- slide indicators -->
+                            <ng-container *ngFor="let d of [].constructor(3); let y = index">
+                                <div [ngClass]="x == y ? 'active_slide' : 'inactive_slide'">&nbsp;</div>
+                            </ng-container>
+                        </div>
+                    </div>
+
+                </div>
+            </ng-template>
+        </ng-container>
+    </owl-carousel-o>
+</div>

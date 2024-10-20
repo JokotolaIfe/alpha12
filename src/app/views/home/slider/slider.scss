@@ -1,0 +1,111 @@
+owl-carousel-o {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.owl-item {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.animated {
+    -webkit-animation-duration: 1000 ms;
+    animation-duration: 1000 ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.owl-animated-out {
+    z-index: 1
+}
+
+.owl-animated-in {
+    z-index: 0
+}
+
+.fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.slide-bg {
+    background-size: cover;
+    background-position: no-repeat;
+    background-position: center;
+    position: relative;
+
+    .text-cont {
+        height: fit-content;
+        position: absolute;
+        bottom: 0;
+        margin: auto;
+        text-align: left;
+        color: white;
+        padding: 2rem;
+        background: -webkit-linear-gradient(to top, #000000f5, transparent);
+        background: linear-gradient(to top, #000000d6, transparent);
+    }
+
+    ._indicators {
+        font-size: 1.6rem;
+        top: 30%;
+        cursor: pointer;
+        width: auto;
+        position: relative;
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+
+    }
+
+    .inactive_slide,
+    .active_slide {
+        width: 30px;
+        height: 3px;
+        margin: 2px;
+    }
+
+    .content-center {
+        justify-content: center;
+    }
+
+    .inactive_slide {
+        background-color: #00000092;
+    }
+
+    .active_slide {
+        background-color: white;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 1.2rem;
+    }
+}

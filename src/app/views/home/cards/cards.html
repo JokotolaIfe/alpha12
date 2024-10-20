@@ -1,0 +1,23 @@
+<section>
+  <div class="d-flex flex-wrap justify-content-between">
+    <div class="card p-2 mt-1 mb-2" *ngFor="let stat of stats">
+      <div class="card-title text-14">{{stat?.title}}
+        <i class="fi fi-rr-info text-14 relative"></i>
+      </div>
+
+      <div class="card-value mt-1 text-21">
+        {{stat?.value}}
+        <span class="stat relative text-14 {{stat?.increase ? 'success-stat': 'danger-stat'}}">
+          <b>
+            <i *ngIf="stat?.increase" class="fi fi-rr-arrow-up-right ml-1"></i>
+            <i *ngIf="!stat?.increase" class="fi fi-rr-arrow-down-left ml-1"></i>
+          </b>
+
+          {{stat?.increase ? '+' : '-'}}
+          {{stat?.stat}}%
+        </span>
+      </div>
+
+    </div>
+  </div>
+</section>
