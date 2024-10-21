@@ -64,6 +64,7 @@ export class Theme {
             modalFooterBg: isDark ? '#ADA9BB' : 'transparent',
             disabledBtn: isDark ? '#484554' : '#E2E8F0',
             tabsBg: isDark ? '#484554' : '#FCF7FF',
+            cardHoverBorder: isDark ? '#8576FF' : '#FCF7FF',
         }
     }
 }

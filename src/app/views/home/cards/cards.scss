@@ -5,6 +5,8 @@
     width: 20%;
     border: solid 1px var(--sidenavBorder);
     font-weight: 500;
+    cursor: pointer;
+    transition: .5s ease-in-out;
 
     &-title {
         color: var(--cardHeader);
@@ -42,5 +44,14 @@
 @media screen and (max-width: 768px) {
     section {
         padding: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card:hover {
+        transform: scale(1.2);
+        -moz-box-shadow: 0 0 5px 5px var(--cardHoverBorder);
+        -webkit-box-shadow: 0 0 5px 5px var(--cardHoverBorder);
+        box-shadow: 0 0 5px 5px var(--cardHoverBorder);
     }
 }
